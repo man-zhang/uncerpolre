@@ -10,21 +10,17 @@
 #### Usage: options
 ```
  -a,--algorithm <arg>       which algorithm you want to employ for
-                            priortizing tests (default is SPEA2), or use
-                            --algorithm
+                            priortizing tests (default is SPEA2)
  -d,--dir <arg>             where you want to save results (default is
-                            `uncertainty_prioritization_solutions`), or
-                            use --dir
- -f,--testsfile <arg>       [REQUIRED] where you have tests to prioritize,
-                            or use --testsfile
+                            `uncertainty_prioritization_solutions`)
+ -f,--testsfile <arg>       [REQUIRED] where you have tests to prioritize
  -r,--repetition <arg>      how many times you want to repeat the
-                            experiment (default is 5), or use --repetition
+                            experiment (default is 5)
  -s,--strategy <arg>        which strategy you want to employ for
-                            priortizing tests (default is 6), or use
-                            --strategy
+                            priortizing tests (default is 6)
  -t,--timeContraint <arg>   what maximum percentage of time budget you
-                            want to apply for (default is 1), or use
-                            --timeContraint
+                            want to apply for (default is 1)
+
 ```
 
 #### Example

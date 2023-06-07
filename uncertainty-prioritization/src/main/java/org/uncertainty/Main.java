@@ -31,26 +31,26 @@ public class Main {
 
 		Options options = new Options();
 		options.addOption(Option.builder("r").longOpt("repetition").hasArg(true)
-				.desc("how many times you want to repeat the experiment (default is 5), or use --repetition")
+				.desc("how many times you want to repeat the experiment (default is 5)")
 				.required(false).build());
 
 		options.addOption(Option.builder("f").longOpt("testsfile").hasArg(true)
-				.desc("[REQUIRED] where you have tests to prioritize, or use --testsfile").required(true).build());
+				.desc("[REQUIRED] where you have tests to prioritize").required(true).build());
 
 		options.addOption(Option.builder("t").longOpt("timeContraint").hasArg(true).desc(
-				"what maximum percentage of time budget you want to apply for (default is 1), or use --timeContraint")
+				"what maximum percentage of time budget you want to apply for (default is 1)")
 				.required(false).build());
 
 		options.addOption(Option.builder("s").longOpt("strategy").hasArg(true)
-				.desc("which strategy you want to employ for priortizing tests (default is 6), or use --strategy")
+				.desc("which strategy you want to employ for priortizing tests (default is 6)")
 				.required(false).build());
 
 		options.addOption(Option.builder("a").longOpt("algorithm").hasArg(true)
-				.desc("which algorithm you want to employ for priortizing tests (default is SPEA2), or use --algorithm")
+				.desc("which algorithm you want to employ for priortizing tests (default is SPEA2)")
 				.required(false).build());
 
 		options.addOption(Option.builder("d").longOpt("dir").hasArg(true)
-				.desc("where you want to save results (default is `uncertainty_prioritization_solutions`), or use --dir")
+				.desc("where you want to save results (default is `uncertainty_prioritization_solutions`)")
 				.required(false).build());
 
 		CommandLineParser parser = new DefaultParser();
