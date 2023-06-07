@@ -2,7 +2,7 @@
 
 - [uncertainty-prioritization](uncertainty-prioritization): source code of our tool.
 - [uncertaintyprioritization.jar](uncertaintyprioritization.jar): a runnable jar for the tool.
-- [Experiment analysis](experiment-analysis/detailed_analysis_results.pdf): detailed analysis results with statistical tests.
+- [Experiment analysis](experiment-analysis/Appendix.pdf): detailed analysis results with statistical tests.
 - [Example](example/foo.json): an example of uncertainty-wise tests, and such tests are inputs for our approach.
 
 ### Get Started
@@ -30,11 +30,17 @@
 using `-f` to specify where your tests are, then run the command
 ```command
 $ java -jar uncertaintyprioritization.jar -f example/foo.json
+
+Done, solutions can be found under uncertainty_prioritization_solutions
 ```
 
-You will get solutions generated under _default path_, i.e., _uncertainty_prioritization_solutions_. as
-```output
-Done, solutions can be found under uncertainty_prioritization_solutions
+You will get solutions generated using **SPEA2** with strategy **Problem 6: f(PET, PTR, AUM, ANU)** and **TB100** under _default path_, i.e., _uncertainty_prioritization_solutions_ as
+
+```
+uncertainty_prioritization_solutions/
+├─ foo_uc1_TB100_SPEA2_ET_CTR_UM_NU_001_FUN.tsv
+├─ foo_uc1_TB100_SPEA2_ET_CTR_UM_NU_001_VAR.tsv
+├─ ...
 ```
 
 #### Used libraries
@@ -49,10 +55,17 @@ If you want to build the tool with source code, you need to add libraries as fol
 - org.eclipse.uml2.uml_5.5.0.v20221116-1811.jar
 - org.eclipse.uml2_5.5.3.v20221116-1811.jar
 
-### Experimental analysis
+### Experiment and analysis
 
-In this package, we also provide a [detailed analysis results](experiment-analysis/detailed_analysis_results.pdf) with a navigation as
+We conducted the experiment with
+- five algorithms: RS, CellDE, NSGAII, and SPEA2
+- 10 strategies: Problem 1 - Problem 10
+- 10 time constraints: TB10 - TB100 specified as time budget
+- repetition: 100
+- five use cases: AW1-AW4 and GS1
+
+Raw data is shared on [google drive](https://drive.google.com/file/d/1oXhVR0boBhEXiOv8QBwICtCDH_KyhlgX/view?usp=drivesdk). In this package, we also provide [detailed analysis results](experiment-analysis) as
 
 ![navigation](experiment-analysis/results-navigation.png)
 
-Raw data is shared on [google drive](https://drive.google.com/file/d/1oXhVR0boBhEXiOv8QBwICtCDH_KyhlgX/view?usp=drivesdk).
+
