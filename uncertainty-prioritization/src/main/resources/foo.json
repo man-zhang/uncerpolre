@@ -1,0 +1,190 @@
+{
+  "caseName": "foo",
+  "ucName": "uc1",
+  "smName": "SM_Tag: Example",
+  "utestmodelName": "foo.utestmodel",
+  "overall": {
+    "alluncertainites": [
+      {
+        "unId": "\u003cS0, T3.1, S2\u003e",
+        "um": 0.05
+      },
+      {
+        "unId": "\u003cS3, T2, S4\u003e",
+        "um": 0.9
+      },
+      {
+        "unId": "\u003cS5, T8.1, S6\u003e",
+        "um": 0.85
+      },
+      {
+        "unId": "\u003cS0, T3.3, S7\u003e",
+        "um": 0.85
+      },
+      {
+        "unId": "\u003cS0, T3.2, S8\u003e",
+        "um": 0.1
+      }
+    ],
+    "transitions": [
+      "f2",
+      "T3.1",
+      "f3",
+      "T2",
+      "I1",
+      "ex1",
+      "T8.1",
+      "T14",
+      "T1",
+      "f4",
+      "T3.3",
+      "I0",
+      "f1",
+      "T3.2",
+      "T7"
+    ],
+    "allIndSs": [
+      {
+        "id": "IndS1"
+      },
+      {
+        "id": "IndS2"
+      }
+    ],
+    "totalNT": 5
+  },
+  "executedUTCs": [
+    {
+      "tcName": "test0",
+      "executionTime": 12.868,
+      "unExecutedSeq": [
+        {
+          "id": "\u003cS5, T8.1, S6\u003e",
+          "verdic": "KnOccurred_UkInS",
+          "alts": []
+        }
+      ],
+      "unSpecified": [
+        "\u003cS3, T2, S4\u003e",
+        "\u003cS5, T8.1, S6\u003e"
+      ],
+      "transitions": [
+        "T8.1",
+        "T7",
+        "I0",
+        "I1",
+        "T1",
+        "f4",
+        "T2",
+        "ex1"
+      ],
+      "generalOracle": "Pass",
+      "isUncertain": true,
+      "umTC": 0.85
+    },
+    {
+      "tcName": "test1",
+      "executionTime": 21.965,
+      "unExecutedSeq": [
+        {
+          "id": "\u003cS0, T3.1, S2\u003e",
+          "verdic": "KnNotOccurred_With_InS",
+          "alts": [
+            {
+              "verdic": "KnOccurred_Without_InS",
+              "alts": []
+            }
+          ]
+        }
+      ],
+      "unSpecified": [
+        "\u003cS3, T2, S4\u003e",
+        "\u003cS0, T3.1, S2\u003e"
+      ],
+      "transitions": [
+        "T3.1",
+        "I0",
+        "I1",
+        "f3",
+        "T1",
+        "T2"
+      ],
+      "generalOracle": "Fail",
+      "isUncertain": true,
+      "umTC": 0.05
+    },
+    {
+      "tcName": "test2",
+      "executionTime": 21.23,
+      "unExecutedSeq": [
+        {
+          "id": "\u003cS0, T3.3, S7\u003e",
+          "verdic": "KnOccurred_With_InS",
+          "alts": []
+        }
+      ],
+      "unSpecified": [
+        "\u003cS3, T2, S4\u003e",
+        "\u003cS0, T3.3, S7\u003e"
+      ],
+      "transitions": [
+        "T3.3",
+        "I0",
+        "I1",
+        "f1",
+        "T1",
+        "T2"
+      ],
+      "generalOracle": "Pass",
+      "isUncertain": true,
+      "umTC": 0.85
+    },
+    {
+      "tcName": "test3",
+      "executionTime": 21.344,
+      "unExecutedSeq": [
+        {
+          "id": "\u003cS0, T3.2, S8\u003e",
+          "verdic": "KnNotOccurred_With_InS",
+          "alts": [
+            {
+              "verdic": "KnOccurred_Without_InS",
+              "alts": []
+            }
+          ]
+        }
+      ],
+      "unSpecified": [
+        "\u003cS3, T2, S4\u003e",
+        "\u003cS0, T3.2, S8\u003e"
+      ],
+      "transitions": [
+        "T3.2",
+        "I0",
+        "I1",
+        "f2",
+        "T1",
+        "T2"
+      ],
+      "generalOracle": "Fail",
+      "isUncertain": true,
+      "umTC": 0.1
+    },
+    {
+      "tcName": "test4",
+      "executionTime": 10.656,
+      "unExecutedSeq": [],
+      "unSpecified": [],
+      "transitions": [
+        "T14",
+        "I0",
+        "T1"
+      ],
+      "generalOracle": "Pass",
+      "isUncertain": false,
+      "umTC": 1.0
+    }
+  ],
+  "totalET": 88.06300000000002,
+  "totalU": 8
+}
