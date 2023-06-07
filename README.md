@@ -64,7 +64,7 @@ We conducted the experiment with
 - repetition: 100
 - five use cases: AW1-AW4 and GS1
 
-Raw data is shared on [google drive](https://drive.google.com/file/d/1oXhVR0boBhEXiOv8QBwICtCDH_KyhlgX/view?usp=drivesdk). In this package, we also provide [detailed analysis results](experiment-analysis) as
+Raw data (50+GB) is shared on [google drive](https://drive.google.com/file/d/1oXhVR0boBhEXiOv8QBwICtCDH_KyhlgX/view?usp=drivesdk). In this package, we also provide [detailed analysis results](experiment-analysis) as
 
 ![navigation](experiment-analysis/results-navigation.png)
 
