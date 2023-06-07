@@ -58,7 +58,7 @@ If you want to build the tool with source code, you need to add libraries as fol
 ### Experiment and analysis
 
 We conducted the experiment with
-- five algorithms: RS, CellDE, NSGAII, and SPEA2
+- five algorithms: RS, CellDE, MOCell, NSGAII, and SPEA2
 - 10 strategies: Problem 1 - Problem 10
 - 10 time constraints: TB10 - TB100 specified as time budget
 - repetition: 100
