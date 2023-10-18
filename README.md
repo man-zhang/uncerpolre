@@ -64,7 +64,6 @@ We conducted the experiment with
 - repetition: 100
 - five use cases: AW1-AW4 and GS1
 
-Raw data (50+GB) is shared on [google drive](https://drive.google.com/file/d/1oXhVR0boBhEXiOv8QBwICtCDH_KyhlgX/view?usp=drivesdk). 
 In this package, we also provide [Appendix A (summarized results for all use cases)](experiment-analysis/AppendixA.pdf) and [Appendix B](experiment-analysis/AppendixB.pdf) (statistical results in detail for each use case, i.e., [AW1](experiment-analysis/AppendixB1_AW1.pdf), [AW2](experiment-analysis/AppendixB2_AW2.pdf), [AW3](experiment-analysis/AppendixB3_AW3.pdf), [AW4](experiment-analysis/AppendixB4_AW4.pdf), [GS1](experiment-analysis/AppendixB5_GS1.pdf)).
 To better find the results for each use case, a navigation table is provided in Appendix B as
 ![navigation](experiment-analysis/results-navigation.png)
